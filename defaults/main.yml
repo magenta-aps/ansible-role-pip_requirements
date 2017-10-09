@@ -1,0 +1,4 @@
+---
+pip_req_path: /vagrant/src
+pip_req_file: requirements.txt
+virtualenv_path: /home/vagrant/venv/

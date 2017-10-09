@@ -1,0 +1,9 @@
+---
+
+  - name: Install requirements into a new virtualenv
+    pip:
+      requirements: "{{ pip_req_path }}/{{ pip_req_file }}"
+      virtualenv: "{{ virtualenv_path }}"
+      virtualenv_python: python2.7
+
+...
