@@ -8,9 +8,9 @@ Usage
 
 To utilize this role, add it to the `requirements.yml` file inside the ansible folder:
 
-    - src: git+https://github.com/magenta-aps/ansible-role-python.git
+    - src: git+https://github.com/magenta-aps/ansible-role-pip_requirements.git
       version: master
-      name: python
+      name: pip_requirements
 
 Requirements
 ------------
