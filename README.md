@@ -20,14 +20,12 @@ Must be run against a `apt` capable system.
 Role Variables
 --------------
 
-| Variable          | Default value         | Purpose                               |
-| ----------------- | --------------------- | ------------------------------------- |
-| `pip_req_path`    | `/vagrant/src`        | The path to the pip requirements file |
-| `pip_req_file`    | `requirements.txt`    | The name of the pip requirements file |
-| `virtualenv_path` | `/home/vagrant/venv/` | The path to setup our virtualenv to   |
-| `virtualenv_user` | `vagrant`             | The user who sets up the virtualenv   |
-
-TODO: Test if variables can be made dependent on other variables
+| Variable          | Default value                       | Purpose                               |
+| ----------------- | ----------------------------------- | ------------------------------------- |
+| `virtualenv_user` | `vagrant`                           | The user who sets up the virtualenv   |
+| `virtualenv_path` | `/home/{{ virtualenv_user }}/venv/` | The path to setup our virtualenv to   |
+| `pip_req_path`    | `/{{ virtualenv_user }}/src`        | The path to the pip requirements file |
+| `pip_req_file`    | `requirements.txt`                  | The name of the pip requirements file |
 
 Dependencies
 ------------

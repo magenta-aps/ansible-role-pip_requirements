@@ -1,5 +1,5 @@
 ---
-pip_req_path: /vagrant/src
-pip_req_file: requirements.txt
-virtualenv_path: /home/vagrant/venv/
 virtualenv_user: vagrant
+virtualenv_path: "/home/{{ virtualenv_user }}/venv/"
+pip_req_path: "/{{ virtualenv_user }}/src"
+pip_req_file: requirements.txt
