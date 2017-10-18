@@ -6,6 +6,6 @@
       virtualenv: "{{ virtualenv_path }}"
       virtualenv_python: python2.7
     become: true
-    become_user: vagrant
+    become_user: "{{ virtualenv_user }}"
 
 ...

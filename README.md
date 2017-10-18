@@ -25,6 +25,9 @@ Role Variables
 | `pip_req_path`    | `/vagrant/src`        | The path to the pip requirements file |
 | `pip_req_file`    | `requirements.txt`    | The name of the pip requirements file |
 | `virtualenv_path` | `/home/vagrant/venv/` | The path to setup our virtualenv to   |
+| `virtualenv_user` | `vagrant`             | The user who sets up the virtualenv   |
+
+TODO: Test if variables can be made dependent on other variables
 
 Dependencies
 ------------
